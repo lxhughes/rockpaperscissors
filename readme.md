@@ -10,7 +10,8 @@ You must have Elixir installed on your machine.
 
 Clone to your local machine, navigate to the folder and open a terminal to type the command:
 
-```elixir rockpaperscissors.ex
+```
+elixir rockpaperscissors.ex
 ```
 
 Follow the command prompts to play the game. You can enter r, p, or s. The computer's choice is not influenced by yours. 
