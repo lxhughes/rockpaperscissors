@@ -1,6 +1,6 @@
 {application,rockpaperscissors,
-             [{applications,[kernel,stdlib,elixir]},
+             [{applications,[kernel,stdlib,elixir,logger]},
               {description,"rockpaperscissors"},
-              {modules,[]},
+              {modules,['Elixir.Game']},
               {registered,[]},
-              {vsn,"1.0.0"}]}.
+              {vsn,"0.1.0"}]}.

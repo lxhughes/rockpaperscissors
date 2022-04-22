@@ -1,4 +1,13 @@
 defmodule Game do
+  @moduledoc """
+  Documentation for `Rock Paper Scissors`.
+
+  The main module of the game. 
+  iChoose() chooses the computer's choice.
+  youChoose() gathers the user's choice from IO.Get
+  compare() compares them
+
+  """
 
   @options %{0 => "rock", 1 => "paper", 2 => "scissors"} 
 
@@ -53,11 +62,13 @@ defmodule Game do
 
   end
 
-end
+  def play() do
+      "Enter r (rock), p (paper), or s (scissors)" 
+    |> IO.gets() 
+    |> String.trim()
+    |> String.downcase() 
+    |> compare() 
+    |> IO.puts()
+  end
 
-"Enter r (rock), p (paper), or s (scissors)" 
-  |> IO.gets() 
-  |> String.trim()
-  |> String.downcase() 
-  |> Game.compare() 
-  |> IO.puts()
+end
